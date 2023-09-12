@@ -1,0 +1,53 @@
+.sna1{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    min-width: 400px;
+    background-color: #333;
+    border-radius: 10px 10px 5px 5px;
+    padding-bottom: px;
+    max-width: 500px;
+}
+
+.sna2{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.sna3{
+    font-size: 30px;
+}
+.sna4{
+    width: 100%;
+    font-size: 20px;
+}
+.sna6{
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius:  0 0 5px 5px;
+}
+
+.sna7{
+    height: 100%;
+    width: 0%;
+    animation: loading 3s linear infinite;
+}
+
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    50%{
+        width: 100%;
+    }
+    
+    100%{
+        width: 100%;
+    }
+}
