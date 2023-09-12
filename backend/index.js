@@ -37,11 +37,11 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 const __dirname1 = path.resolve();
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname1, "../frontendm/build")));
+  app.use(express.static(path.join(__dirname1, "/frontendm/build")));
 
   app.get("/", (req, res) => {
     res.sendFile(
-      path.resolve(__dirname1, "../", "frontendm", "build", "index.html")
+      path.resolve(__dirname1, "frontendm", "build", "index.html")
     );
   });
 } else {
